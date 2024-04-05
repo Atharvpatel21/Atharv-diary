@@ -1,0 +1,57 @@
+<ion-app>
+
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Atharv Dairy</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+   
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" style="background: var(--ion-color-primary);"
+        size-lg="8"offset="2" size-xl="6" offset="3">
+        I am full and have offset on bigger screens
+        </ion-col>
+        <ion-col size="6">
+    <ion-card>
+       <ion-card-header>
+              <ion-card-title>Gallery</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-item>
+                <ion-label position="floating">Name</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Place</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+              <ion-datetime value="2022-04-21T00:00:00" min="2022-03-01T00:00:00" max="2022-05-31T23:59:59"></ion-datetime>
+              <ion-checkbox>I agree to the terms and conditions</ion-checkbox><br>
+              <ion-button>Submit</ion-button>  <ion-fab>
+                <ion-fab-button>
+                  <ion-icon name="add"></ion-icon>
+                </ion-fab-button>
+              </ion-fab>
+            </ion-card-content>
+              <ion-searchbar></ion-searchbar>
+              <div id="box">
+                <ion-checkbox color="light"></ion-checkbox>
+                <ion-button class="ion-margin-start" color="light">Clickable</ion-button>
+              </div>
+             
+    </ion-card>
+  
+    <!-- <ion-searchbar search-icon="search-circle" placeholder="Custom Search Icon"></ion-searchbar> -->
+  
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-content>
+</ion-app>
